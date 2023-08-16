@@ -1,6 +1,6 @@
 FC=/opt/homebrew/Cellar/gcc/13.1.0/bin/gfortran
 F77=/opt/homebrew/Cellar/gcc/13.1.0/bin/gfortran
-FLIBS=-L/opt/homebrew/Cellar/gcc/13.1.0/lib/gcc/13
+FLIBS=-L/opt/homebrew/Cellar/gcc/13.1.0/lib/gcc/13 -lgfortran -lquadmath -lm
 
 CXX_STD=CXX11
 PKG_CXXFLAGS= $(SHLIB_OPENMP_CXXFLAGS)
